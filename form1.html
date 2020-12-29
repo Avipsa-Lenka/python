@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        body{
+    margin: 0;
+    padding: 15px;
+    background: url(back.ipg.jpg);
+    background-size: auto;
+    background-position: center;
+    font-family: sans-serif;
+}
+.login-box{
+    width: 320px;
+    height: 420px;
+    background:skyblue;
+    top: 40%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 30px;
+}
+.login-box p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.login-box input{
+    width: 100%;
+    margin-bottom: 40px;
+}
+.login-box input[type="text"]:focus, input[type="password"]:focus
+{
+    
+                width: 100%;
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                border: none;
+                background: white;
+}
+.login-box input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: hotpink;
+    color:hotpink;
+    font-size: 18px;
+    border-radius: 18px;
+    
+}
+.login-box input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: hotpink;
+    color: hotpink;
+}
+
+.login-box a{
+    text-decoration: black;
+    font-size: 14px;
+    color: #fff;
+}
+.login-box a:hover
+{
+    color: #39dc79;
+}
+            .btn{
+                background-color:hotpink;
+                color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Sign In</h1>
+        <div class="login-box">
+            <form action="mypage.asp" class="container">
+    <label for="email">
+           </label>
+        <input type="text" placeholder="username or email" name="email" required >
+    <label for="psw">
+        </label>
+        <input type="password" placeholder="password" name="psw" required>
+        <button type="submit" class="btn">Sign in</button>
+    </form>
+        </div>
+    </body>
